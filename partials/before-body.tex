@@ -1,0 +1,22 @@
+$if(font-headings-sans)$\allsectionsfont{\sffamily}$endif$
+
+$if(has-frontmatter)$
+\frontmatter
+$endif$
+$if(title)$
+\maketitle
+$endif$
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$if(keywords)$
+\textbf{\textit{Keywords}}\quad $for(keywords)$$keywords$$sep$~\textbullet~$endfor$
+$endif$
+
+$if(jelcodes)$
+\textbf{\textit{JEL Codes:}}\quad $for(jelcode)$$keywords$$sep$~\textbullet~$endfor$
+$endif$
